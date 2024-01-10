@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var imie = prompt("Podaj imię.");
+        document.write("Witaj " + imie + "!");*/
+
+        function dodawanie(a, b)
+            {return a+ b;}
+
+        function odejmowanie(a, b)
+            {return a - b;}
+
+        function mnożenie(a, b)
+            {return a * b;}
+
+        function dzielenie(a, b)
+            {return a / b;}
+
+        function kalkulator()
+        {
+            var liczba1 = prompt("Podaj pierwszą liczbę");
+            var liczba2 = prompt("Podaj drugą liczbę");
+
+            var dzialanie = prompt("Jakie działanie chcesz wykonać:\n - Dodawanie\n2 - Odejmowanie\n3 - Mnożenie\n4 - Dzielenie");
+
+            switch (dzialanie)
+            {
+                case "1":
+                    var wynik = dodawanie(liczba1, liczba2);
+                    break;
+                case "2":
+                    var wynik = odejmowanie(liczba1, liczba2);
+                    break;
+                case "3":
+                    var wynik = mnożenie(liczba1, liczba2);
+                    break;
+                case "4":
+                    var wynik = dzielenie(liczba1, liczba2);
+                    break;
+
+
+            }
+            alert("Wynik działania: " + wynik)
+        }
+
+    </script>
+</body>
+</html>
